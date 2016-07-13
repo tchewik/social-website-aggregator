@@ -1,0 +1,13 @@
+#website-item a {
+    color: #7d7a8d;
+}
+#website-item a:hover,
+#website-item a:active,
+#website-item a:focus {
+    color: #44414c;
+    text-decoration: none;
+}
+
+#website-item p {
+    color: #44414c;
+}

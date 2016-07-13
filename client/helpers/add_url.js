@@ -6,7 +6,8 @@ Template.addURL.events({
         var urlAttributes = {
             url: event.target.url.value,
             title: event.target.title.value,
-            description: event.target.description.value
+            description: event.target.description.value,
+            rating: 0
         };
 
         var re = /https?:\/\/[0-9a-z.:\/]+\.[0-9a-z.:\/]+/gi;
