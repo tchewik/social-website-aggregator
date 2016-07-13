@@ -1,0 +1,36 @@
+.navbar-inverse {
+    background-color: #101010;
+}
+
+.dropdown-menu {
+    background-color: #101010;
+}
+
+#login-buttons-password,
+#login-buttons-logout,
+#login-buttons-open-change-password {
+    background-color: #270515;
+    border-color: #210411;
+    color: #eadcf9;
+}
+
+#login-buttons-password:hover,
+#login-buttons-logout:hover,
+#login-buttons-open-change-password:hover {
+    background-color: #19030d;
+    border-color: #15030a;
+    color: #cfc3de;
+}
+
+#forgot-password-link,
+#signup-link {
+    color: #eadcf9;
+}
+
+#forgot-password-link:hover,
+#signup-link:hover {
+    color: #cfc3de;
+    text-decoration: none;
+}
+
+

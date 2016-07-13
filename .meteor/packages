@@ -19,5 +19,5 @@ twbs:bootstrap
 accounts-password
 standard-minifier-css
 standard-minifier-js
-urbanetic:accounts-ui
 iron:router
+ian:accounts-ui-bootstrap-3
