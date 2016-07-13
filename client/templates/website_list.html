@@ -2,11 +2,22 @@
 <template name="websiteList">
 
     {{> searchBox}}
+
+    <div style="padding-top: 3em;"></div>
+	<div class="alert alert-danger fade in">
+		<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		Click on "More..." for going to the detail page for website!
+	</div>
+	<div class="alert alert-danger fade in">
+		<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		You always can go on homepage (which is that) or add a website with click on your e-mail in top-right :) Description and picture for your website will be added automatically.
+	</div>
+
     <ul>
         {{#each websites}}
             {{>websiteItem}}
         {{/each}}
         <br/><br/>
     </ul>
-    {{> recomList}}
+    <!--{{> recomList}} it doesn't work clear-->
 </template>
