@@ -1,3 +1,3 @@
-Template.log_in.onRendered(function () {
+Template.logIn.onRendered(function () {
     console.log('please, log in');
 });

@@ -1,4 +1,4 @@
-Template.website_item.events({
+Template.websiteItem.events({
     "click .js-upvote":function(event){
         // example of how you can access the id for the website in the database
         // (this is the data context for the template)

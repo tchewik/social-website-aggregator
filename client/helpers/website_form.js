@@ -1,4 +1,4 @@
-Template.website_form.events({
+Template.websiteForm.events({
     "click .js-toggle-website-form":function(event){
         $("#website_form").toggle('slow');
     },
