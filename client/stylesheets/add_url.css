@@ -1,0 +1,24 @@
+#website_form label {
+    color: rgb(94, 85, 87);
+}
+
+.btn {
+    background-color: #270515;
+    border-color: #210411;
+    color: #eadcf9;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #270515;
+    border-color: #210411;
+    color: #eadcf9;
+}
+
+#invalid-url,
+#invalid-description,
+#url-already-exist {
+    display: none;
+    font-weight: bolder;
+    color: #711a30;
+}

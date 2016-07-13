@@ -1,3 +1,6 @@
+body {
+    background-color: #212121;
+}
 .navbar-inverse {
     background-color: #101010;
 }
@@ -8,15 +11,27 @@
 
 #login-buttons-password,
 #login-buttons-logout,
-#login-buttons-open-change-password {
+#login-buttons-open-change-password,
+#login-buttons-do-change-password,
+#login-buttons-cancel-change-password,
+#login-buttons-add-url {
     background-color: #270515;
     border-color: #210411;
     color: #eadcf9;
 }
 
 #login-buttons-password:hover,
+#login-buttons-password:focus,
 #login-buttons-logout:hover,
-#login-buttons-open-change-password:hover {
+#login-buttons-logout:focus,
+#login-buttons-open-change-password:hover,
+#login-buttons-open-change-password:focus,
+#login-buttons-do-change-password:hover,
+#login-buttons-do-change-password:focus,
+#login-buttons-cancel-change-password:hover,
+#login-buttons-cancel-change-password:focus,
+#login-buttons-add-url:hover,
+#login-buttons-add-url:focus {
     background-color: #19030d;
     border-color: #15030a;
     color: #cfc3de;
@@ -33,4 +48,13 @@
     text-decoration: none;
 }
 
-
+input[type=text],
+textarea {
+    background-color: #fff !important;
+}
+input[type=text]:focus,
+textarea:focus,
+textarea .focus {
+    box-shadow: 0 0 5px #19030d !important;
+    border: 1px solid #15030a !important;
+}

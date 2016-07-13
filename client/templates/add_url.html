@@ -1,12 +1,11 @@
-<template name="websiteForm">
-    <a class="btn btn-default js-toggle-website-form" href="#">
-        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-    </a>
+<template name="addURL">
     <div id="website_form" class="hidden_div">
         <form class="js-save-website-form">
             <div class="form-group">
                 <label for="url">Site address</label>
                 <input type="text" class="form-control" id="url" placeholder="http://www.mysite.com">
+                <div id="invalid-url">URL has wrong format</div>
+                <div id="url-already-exist">URL is already in list!</div>
             </div>
             <div class="form-group">
                 <label for="title">Title</label>
@@ -15,6 +14,7 @@
             <div class="form-group">
                 <label for="description">Description</label>
                 <input type="text" class="form-control" id="description" placeholder="I found this site really useful for ...">
+                <div id="invalid-description">You have to place a pair words here</div>
             </div>
 
             <button type="submit" class="btn btn-default">Submit</button>
