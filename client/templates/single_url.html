@@ -1,18 +1,24 @@
 <template name="singleUrl">
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <a href="{{url}}">{{#if title}}{{title}}{{else}}{{url}}{{/if}}</a>
-                <p>  {{description}}  </p>
+    <div class="space-bg"></div>
+    <div class="container glass-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                    <img class="site-img" src="{{siteImg}}">
+                </div>
+                <div class="col-md-10">
+                    <a id="website-url" href="{{url}}" target="_blank">{{#if title}}{{title}}{{else}}{{url}}{{/if}}</a>
+                    <p id="website-single-url-description">  {{description}}  </p>
+                </div>
             </div>
         </div>
     </div>
-
-    {{> commentForm}}
-    <ul class="comments">
-        {{#each comments}}
-            {{> comment}}
-        {{/each}}
-    </ul>
+    <div class="container glass-container">
+        {{> commentForm}}
+            <ul class="comments">
+                {{#each comments}}
+                    {{> comment}}
+                {{/each}}
+            </ul>
+    </div>
 </template>

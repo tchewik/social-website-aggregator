@@ -1,0 +1,20 @@
+.comment-panel {
+    padding-top: 0.6em;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-bottom: 0.6em;
+}
+
+.comment-username {
+    padding-top: 0.4em;
+    padding-right: 0.8em;
+    padding-left: 0.8em;
+    padding-bottom: 0.2em;
+    background: rgba(210, 212, 237, 0.66);
+    color: #19050e;
+}
+
+.comment-text {
+    letter-spacing: 0.08em;
+    color: rgba(210, 212, 237, 0.66);
+}

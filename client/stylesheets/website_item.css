@@ -24,6 +24,7 @@
 
 #website-url {
     color: #d2d4ed !important;
+    text-decoration: none !important;
     font-size: 1.8em;
     font-family: 'Anonymous Pro', "HelveticaNeue", Helvetica, Arial, sans-serif;
     font-variant: all-petite-caps;

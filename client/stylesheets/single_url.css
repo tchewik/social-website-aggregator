@@ -1,0 +1,18 @@
+.site-img {
+    height: 48px;
+    width: auto;
+    /*background-image: url("img_not_found.jpg");
+    background-size: 48px auto;*/
+}
+
+.glass-container {
+    background-color: rgba(25, 5, 14, 0.67);
+    padding-top: 2em;
+    padding-right: 0;
+    padding-left: 1.8em;
+    padding-bottom: 1em;
+}
+
+#website-single-url-description {
+    color: rgba(210, 212, 237, 0.62);
+}

@@ -6,7 +6,3 @@ Template.comment.helpers({
         return Comments.findOne({'_id': this._id}).date.toDateString();
     }
 });
-
-Template.comment.rendered = function () {
-    console.log(this);
-};

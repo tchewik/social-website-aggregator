@@ -1,5 +1,6 @@
 <template name="comment">
-    <p>{{username}}</p><span>{{date}}</span>
-    <p>{{data}}</p>
-    <p>{{this}}</p>
+    <div class="comment-panel">
+        <h4 class="comment-username"><span class="comment-date">{{date}}: </span>{{username}} </h4>
+        <div class="comment-text">{{data}}</div>
+    </div>
 </template>
