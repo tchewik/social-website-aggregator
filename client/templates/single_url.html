@@ -1,0 +1,18 @@
+<template name="singleUrl">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <a href="{{url}}">{{#if title}}{{title}}{{else}}{{url}}{{/if}}</a>
+                <p>  {{description}}  </p>
+            </div>
+        </div>
+    </div>
+
+    {{> commentForm}}
+    <ul class="comments">
+        {{#each comments}}
+            {{> comment}}
+        {{/each}}
+    </ul>
+</template>

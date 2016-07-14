@@ -1,6 +1,15 @@
+#website-item .row{
+    background-color: rgba(25, 5, 14, 0.67);
+    padding-top: 2em;
+    padding-right: 0;
+    padding-left: 1.8em;
+    padding-bottom: 1em;
+}
+
 #website-item a {
     color: #7d7a8d;
 }
+
 #website-item a:hover,
 #website-item a:active,
 #website-item a:focus {
@@ -10,4 +19,12 @@
 
 #website-item p {
     color: #44414c;
+    letter-spacing: 0.08em;
+}
+
+#website-url {
+    color: #d2d4ed !important;
+    font-size: 1.8em;
+    font-family: 'Anonymous Pro', "HelveticaNeue", Helvetica, Arial, sans-serif;
+    font-variant: all-petite-caps;
 }

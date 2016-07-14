@@ -3,8 +3,9 @@
     <li id="website-item">
         <div class="row">
             <div class="col-md-6">
-                <a href="{{url}}">{{#if title}}{{title}}{{else}}{{url}}{{/if}}</a>
-                <p>  {{description}}  </p>
+                <a id="website-url" href="{{url}}" target="_blank">{{#if title}}{{title}}{{else}}{{url}}{{/if}}</a>
+                <p>  {{description}} <a href="/websites/{{_id}}">More...</a>  </p>
+
             </div>
             <div class="col-md-2">
                 <div class="col-md-1">

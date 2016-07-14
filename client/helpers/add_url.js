@@ -1,8 +1,7 @@
 Template.addURL.events({
     "submit .js-save-website-form":function(event){
         event.preventDefault();
-        // here is an example of how to get the url out of the form:
-
+        
         var urlAttributes = {
             url: event.target.url.value,
             title: event.target.title.value,
