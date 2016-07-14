@@ -1,8 +1,10 @@
 <!-- template that displays several website items -->
 <template name="websiteList">
-    <ol>
+    <div class="space-bg"></div>
+    <ul>
         {{#each websites}}
             {{>websiteItem}}
         {{/each}}
-    </ol>
+        <br/><br/>
+    </ul>
 </template>

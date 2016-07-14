@@ -1,12 +1,12 @@
 body {
-    background-color: #212121;
+    background-color: rgba(30, 5, 19, 0.98);
 }
 .navbar-inverse {
-    background-color: #101010;
+    background-color: #0f020b;
 }
 
 .dropdown-menu {
-    background-color: #101010;
+    background-color: #0f020b;
 }
 
 #login-buttons-password,
