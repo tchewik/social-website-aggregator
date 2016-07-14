@@ -1,6 +1,6 @@
 .space-bg {
     z-index: -1;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     left: 0px;
     min-width: 100vw;
