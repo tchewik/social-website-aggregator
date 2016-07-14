@@ -22,3 +22,10 @@
     font-weight: bolder;
     color: #711a30;
 }
+
+.highlight {
+    box-shadow: 0 0 5px #fff !important;
+    border: 1px solid #fff !important;
+    color: #270515;
+    font-weight: bold;
+}

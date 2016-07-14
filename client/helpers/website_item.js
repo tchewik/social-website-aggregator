@@ -14,5 +14,5 @@ Template.websiteItem.events({
 Template.websiteItem.helpers({
     date: function(){
         return Websites.findOne({'_id': this._id}).createdOn.toDateString();
-    }
+    } 
 });

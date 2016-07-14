@@ -1,7 +1,7 @@
 Template.addURL.events({
     "submit .js-save-website-form":function(event){
         event.preventDefault();
-        
+
         var urlAttributes = {
             url: event.target.url.value,
             title: event.target.title.value,
@@ -27,6 +27,26 @@ Template.addURL.events({
         });
 
         return false;// stop the form submit from reloading the page
+    },
+    "change #url":function (event) {
+        console.log(event.target.value);
+        var url = event.target.value;
+        var smth;
+
+        setTimeout( function() {
+            Meteor.call( "give_description", url, function( error, response ) {
+                if ( error ) {
+                    console.log( error );
+                } else {
+                    smth = response;
+                    $("#description").val(smth);
+                    $("#description").toggleClass("highlight");
+                }
+            });
+        }, 1 );
+    },
+    "focus #description":function (event) {
+        $("#description").removeClass("highlight");
     }
 });
 
