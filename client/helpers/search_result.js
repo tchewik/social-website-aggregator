@@ -6,7 +6,6 @@ Template.searchResult.helpers({
             },
             sort: {isoScore: -1}
         });
-        console.log(data);
         return data;
     },
 

@@ -1,8 +1,9 @@
 <template name="searchResult">
 
-    <div class="container">
-        {{> searchBox}}
-    </div>
+    {{> searchBox}}
+    <script>
+        $("#search-box").focus();
+    </script>
 
     <div id="search-meta">
         {{#if isLoading}}
@@ -15,11 +16,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-1">
-                        <img id="site-img" class="site-img" src="" onerror="$('#site-img').attr('src', '/img_not_found.jpg')">
+                        <img id="site-img" class="site-img" src="{{pic}}" onerror="$(this).attr('src', '/img_not_found.jpg')">
                     </div>
                     <div class="col-md-10">
-                        <a id="website-url" href="{{url}}" target="_blank">{{#if title}}{{title}}{{else}}{{url}}{{/if}}</a>
-                        <p id="website-single-url-description">  {{description}}  </p>
+                        <a id="website-url" href="{{url}}" target="_blank">{{#if title}}{{{title}}}{{else}}{{{url}}}{{/if}}</a>
+                        <p id="website-single-url-description">  {{{description}}}  </p>
                     </div>
                 </div>
             </div>
