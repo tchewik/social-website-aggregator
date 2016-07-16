@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-1">
-                    <img id="site-img" class="site-img" src="">
+                    <img id="site-img" class="site-img" src="" onerror="$('#site-img').attr('src', '/img_not_found.jpg')">
                 </div>
                 <div class="col-md-10">
                     <a id="website-url" href="{{url}}" target="_blank">{{#if title}}{{title}}{{else}}{{url}}{{/if}}</a>

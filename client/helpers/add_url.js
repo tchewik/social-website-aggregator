@@ -29,17 +29,14 @@ Template.addURL.events({
         return false;// stop the form submit from reloading the page
     },
     "change #url":function (event) {
-        console.log(event.target.value);
         var url = event.target.value;
-        var smth;
 
         setTimeout( function() {
             Meteor.call( "give_description", url, function( error, response ) {
                 if ( error ) {
                     console.log( error );
                 } else {
-                    smth = response;
-                    $("#description").val(smth);
+                    $("#description").val(response);
                     $("#description").toggleClass("highlight");
                 }
             });
