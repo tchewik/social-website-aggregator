@@ -1,0 +1,17 @@
+input#search-box {
+    border: 1px dotted #999;
+    border-radius: 0;
+    height: 2.5em;
+
+    -webkit-appearance: none;
+    width: 100vw;
+    left: 0;
+    background: #6a2b46;
+}
+
+input#search-box:focus {
+    background   : rgba(0,0,0,.1);
+    border-radius: 5px;
+    outline      : none;
+    border: #6a2b46;
+}
