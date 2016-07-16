@@ -1,0 +1,10 @@
+<template name="comments">
+    <div class="container glass-container">
+        {{> commentForm}}
+        <ul class="comments">
+            {{#each comments}}
+                {{> comment}}
+            {{/each}}
+        </ul>
+    </div>
+</template>

@@ -22,3 +22,6 @@ standard-minifier-js
 iron:router
 ian:accounts-ui-bootstrap-3
 http
+meteorhacks:search-source
+ejson
+check
