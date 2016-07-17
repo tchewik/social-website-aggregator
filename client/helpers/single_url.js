@@ -1,9 +1,5 @@
 Template.singleUrl.rendered = function () {
     if (this.data) {
-        url = this.data.url;
-        console.log("singleUrl says:");
-        console.log(this.data);
-
         var picture = this.data.pic;
         if (picture.match(/\.svg$/i)) {
             $('#site-img').attr("style", "background-color: #eadcf9;");

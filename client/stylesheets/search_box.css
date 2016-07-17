@@ -4,7 +4,9 @@ input#search-box {
     height: 2.5em;
 
     -webkit-appearance: none;
+    position: absolute;
     width: 100vw;
+    top: 4em;
     left: 0;
     background: #6a2b46;
 }
