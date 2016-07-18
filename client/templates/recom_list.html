@@ -1,0 +1,22 @@
+<template name="recomList">
+    <div class="glass-container">
+        {{#if isLoading}}
+        <h2 id="no-recommendations">We currently don't have any personalized recommendations for you.</h2>
+        {{else}}
+        <h2>We have personalized recommendations for you:</h2>
+        <div id="recom-list">
+            {{#each recommendations}}
+                <div class="row">
+                    <div class="col-md-1">
+                        <img id="site-img" class="site-img" src="{{pic}}" onerror="$('#site-img').attr('src', '/img_not_found.jpg')">
+                    </div>
+                    <div class="col-md-10">
+                        <a id="website-url" href="{{url}}" target="_blank">{{#if title}}{{title}}{{else}}{{url}}{{/if}}</a>
+                        <p id="website-single-url-description">  {{description}}  </p>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+        {{/if}}
+    </div>
+</template>

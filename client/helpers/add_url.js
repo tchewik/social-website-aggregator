@@ -21,6 +21,9 @@ Template.addURL.events({
             return false;
         }
         Meteor.call('addURL', urlAttributes, function(error, result) {
+            if (error) {
+                console.log(error);
+            }
             if (result.urlExists)
                 $('#url-already-exist').toggle("display:none");
             else Router.go('homePage');

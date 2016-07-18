@@ -16,9 +16,9 @@
 
 #please-log-in {
     z-index: 0;
-    padding-top: 45vh;
-    height: 100%;
-    width: 100%;
+    position: fixed;
+    top: 43vh;
+    left: 30vw;
     text-align: center;
     font-family: 'Anonymous Pro', "HelveticaNeue", Helvetica, Arial, sans-serif;
     color: #bbb;
